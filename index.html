@@ -13,98 +13,147 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container__main">
-      <div class="container">
-        <h1 class="text-center text-uppercase mt-5">
-          Free html bootstrap <br />
-          template
-        </h1>
-        <p class="create__create position-absolute text-center">
-          Create a beautiful, responsive, mobile-friendlym website with resume,
-          portfolio, coming <br />
-          soon and product showcase pages. The template comes with 50+ clean and
-          modern <br />
-          web block (sticky dropdown menus, full-screen intros, parallax, video
-          backgrounds, <br />
-          carousels, sliders, image galleries, features, icon boxes, media,
-          articles, blog posts, <br />
-          testimonials, social share, follow us, pricing tables, subscribe
-          forms,
-          <br />
-          contact forms, maps, footers) and 4 pre designed pages will give you
-          full options to bild a <br />
-          unique website in a matter of minutes.
-        </p>
-        <form action="#" class="position-absolute">
-          <button type="button" class="btn btn-dark">FREE DOWNLOAD</button>
-          <button type="button" class="btn btn-light">VIEW DEMOS</button>
-        </form>
-        <img src="img/btn.png" alt="" class="imgg"/ >
-      </div>
+    <!-- Button trigger modal -->
+    <div
+      class="ota"
+      style="display: flex; justify-content: center; margin-top: 300px"
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        style="width: 250px; height: 80px; font-size: 32px"
+      >
+        Slider
+      </button>
     </div>
-    <div class="splendid">
-      <div class="container">
-        <h2 class="text-uppercase mt-5 position-absolute">
-          4 splendid pre-made sites
-        </h2>
-        <ul class="list">
-          <li class="item">
-            <img src="/img/resume.png" alt="" />
-            <h4>Resume Template</h4>
-            <p>
-              This theme is perfect for tho swho want to place information about
-              their professional skills online: education, experience, awards
-              and works. Modern, clean, but yet flexible design based on
-              Bootstrap
-            </p>
-            <button type="button" class="button__for btn btn-dark">
-              VIEW DEMO
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: black">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalLabel"
+              style="color: white"
+            >
+              Car-card slider
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card" style="width: 18rem; margin: 0 auto">
+                    <img
+                      src="https://avatars.mds.yandex.net/get-verba/997355/2a0000018aaeed2a68f136052a36ebb84938/cattouchret"
+                      class="card-img-top"
+                      style="height: 215px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes</h5>
+                      <p class="card-text">
+                        Mercedes-Benz Group AG (Mercedes-Benz), formerly Daimler
+                        AG, is an automobile company. It develops, manufactures
+                        and distributes premium and luxury cars and vans.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="width: 18rem; margin: 0 auto">
+                    <img
+                      src="https://avatars.mds.yandex.net/get-verba/1540742/2a00000180d7fa047e2e09e71e665301c310/cattouchret"
+                      class="card-img-top"
+                      style="height: 215px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">BMW</h5>
+                      <p class="card-text">
+                        Bayerische Motoren Werke AG, abbreviated as BMW is a
+                        German multinational manufacturer of luxury vehicles and
+                        motorcycles headquartered in Munich, Bavaria, Germany.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="width: 18rem; margin: 0 auto">
+                    <img
+                      src="https://chevrolet.uz/assets/images/damas/index.jpg"
+                      class="card-img-top"
+                      style="height: 215px; object-fit: cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">DAMAS</h5>
+                      <p class="card-text">
+                        Uzbekistan's best car ever sold in the world, top speed
+                        around 400km/h and it looks like really scary, other
+                        cars are just trash next to DAMAS. This was producted in
+                        UZB.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal-footer"
+            style="display: flex; justify-content: center"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
             </button>
-          </li>
-          <li class="item">
-            <img src="/img/mobile.png" alt="" />
-            <h4>Mobile App Template</h4>
-            <p>
-              This theme is perfect for tho swho want to place information about
-              their professional skills online: education, experience, awards
-              and works. Modern, clean, but yet flexible design based on
-              Bootstrap
-            </p>
-            <button type="button" class="button__for btn btn-dark">
-              VIEW DEMO
-            </button>
-          </li>
-          <li class="item">
-            <img src="/img/coming.png" alt="" />
-            <h4>Coming Soon Template</h4>
-            <p>
-              This theme is perfect for tho swho want to place information about
-              their professional skills online: education, experience, awards
-              and works. Modern, clean, but yet flexible design based on
-              Bootstrap
-            </p>
-            <button type="button" class="button__for btn btn-dark">
-              VIEW DEMO
-            </button>
-          </li>
-          <li class="item">
-            <img src="/img/portfolio.png" alt="" />
-            <h4>Photo Portfolio Template</h4>
-            <p>
-              This theme is perfect for tho swho want to place information about
-              their professional skills online: education, experience, awards
-              and works. Modern, clean, but yet flexible design based on
-              Bootstrap
-            </p>
-            <button type="button" class="button__for btn btn-dark">
-              VIEW DEMO
-            </button>
-          </li>
-        </ul>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="blocks bg-secondary">
-      <div class="container"><h1>50+ TEMPLATE BLOCKS</h1></div>
     </div>
   </body>
   <script
